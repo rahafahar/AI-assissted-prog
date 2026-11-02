@@ -1,15 +1,15 @@
 #ifndef GUESS
 #define GUESS
 
-class Guess{
+class Guess {
+private:
+    char letter_;
 
-    private:
-    std::string secretWord;
-   // char L;
-    
-    public:
-    Guess(char userGuess); //takes user guess
-    attemps(int n); // counts if number of attempts <= 10 and if there are any attempts left
-    
+public:
+    Guess(char userGuess); // takes user guess
+
+    char letter() const;
+    bool isValid() const;
 };
+
 #endif
